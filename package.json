@@ -13,6 +13,7 @@
   "author": "Damon Oehlman <damon.oehlman@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "pull-stream": "~2.20.0"
   }
 }
