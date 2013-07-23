@@ -16,6 +16,8 @@
     "async": "~0.2.9",
     "pull-stream": "~2.20.0",
     "q": "~0.9.6",
-    "promise": "~3.2.0"
+    "promise": "~3.2.0",
+    "gens": "~0.2.4",
+    "continuable-para": "~1.0.2"
   }
 }
