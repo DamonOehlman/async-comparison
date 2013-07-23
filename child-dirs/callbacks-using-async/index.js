@@ -7,7 +7,9 @@ function findSamples(targetPath, callback) {
     if (err) return callback(err);
 
     // get the full path names of the files
-    files = files.map(path.join.bind(null, targetPath));
+    files = files.map(function(name){
+      return path.join(targetPath, name)
+    });
 
     // stat each of the files
     async.map(files, fs.stat, function(err, results) {
