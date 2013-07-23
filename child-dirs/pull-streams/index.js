@@ -9,9 +9,11 @@ function findSamples(targetPath, callback) {
     pull(
       pull.values(files),
 
-      // join the path names and stat the files        
+      // join the path names and stat the files
       pull.map(path.join.bind(null, targetPath)),
-      pull.asyncMap(function(filename, callback) {
+
+      // stat the files in parallel but return in order
+      pull.paraMap(function(filename, callback) {
         fs.stat(filename, function(err, stats) {
           // create a compound object so we don't lose the filename
           // in the map transformation
