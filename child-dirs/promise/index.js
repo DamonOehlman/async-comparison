@@ -8,7 +8,9 @@ var fs = {
 function findSamples(targetPath, callback) {
   return fs.readdir(targetPath).then(function(files) {
     // get the full path names of the files
-    files = files.map(path.join.bind(null, targetPath));
+    files = files.map(function(name){
+      return path.join(targetPath, name)
+    });
 
     //get a promise for all the `Stat` objects of each file
     var stats = Promise.all(files.map(function (path) {

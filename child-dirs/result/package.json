@@ -1,0 +1,10 @@
+{
+  "name": "result",
+  "version": "0.0.0",
+  "dependencies": {
+    "resultify": "0.2.4",
+    "filter": "http://github.com/jkroso/filter/tarball/0.1.1",
+    "when": "http://github.com/jkroso/when/tarball/3.2.4",
+    "result-type": "1.0.0"
+  }
+}
