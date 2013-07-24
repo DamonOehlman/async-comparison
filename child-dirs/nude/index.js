@@ -1,10 +1,10 @@
 var fs = require('fs')
 
 function readDirs(dir, cb) {
-  fs.readdir(dir, function (err, dir) {
+  fs.readdir(dir, function (err, ls) {
     if(err) return cb(err)
     var n = 0, dirs = []
-    dir.forEach(function (d) {
+    ls.forEach(function (d) {
       n++
       fs.stat(d, function (err, stat) {
         if(err) return cb(err)
