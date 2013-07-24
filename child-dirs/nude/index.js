@@ -16,7 +16,7 @@ function readDirs(dir, cb) {
       if(--n) return
       cb(null, dirs)
     }
-    if(!n) next()
+    if(!n) cb(null, [])
   })
 }
 
