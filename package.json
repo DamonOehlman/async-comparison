@@ -18,6 +18,7 @@
     "q": "~0.9.6",
     "promise": "~3.2.0",
     "gens": "~0.2.4",
-    "continuable-para": "~1.0.2"
+    "continuable-para": "~1.0.2",
+    "asyncreduce": "~0.1.3"
   }
 }
